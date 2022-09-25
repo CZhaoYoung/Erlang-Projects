@@ -1,1 +1,2 @@
-# Erlang-Projects
+# DOSP Erlang-Projects
+Zhaoyang Chen
