@@ -87,6 +87,16 @@ data_actor(Data) ->
             % Since this is not updating the data, do not forward msg
             Sender ! {self(), timeline, UserId, Page, timeline(Data, UserId, Page)},
             data_actor(Data);
+
+        {Sender, get_timeline_hashtag, UserId, Page} ->
+            % Since this is not updating the data, do not forward msg
+            Sender ! {self(), timeline_hashtag, UserId, Page, timeline(Data, UserId, Page)},
+            data_actor(Data);
+
+        {Sender, get_timeline_mention, UserId, Page} ->
+            % Since this is not updating the data, do not forward msg
+            Sender ! {self(), timeline_mention, UserId, Page, timeline(Data, UserId, Page)},
+            data_actor(Data);
             
         {Sender, get_tweets,   UserId, Page} ->
             % Since this is not updating the data, do not forward msg
@@ -165,6 +175,8 @@ timeline(Data, UserId, _Page) ->
                     sets:to_list(Subscriptions)),
     SortedTweets = lists:reverse(lists:keysort(3, UnsortedTweetsForTimeLine)),
     lists:sublist(SortedTweets, 10).
+    
+
 
 tweets(Data, UserId, _Page) ->
     {user, UserId, Tweets, _Subscriptions} = lists:nth(UserId + 1, Data),

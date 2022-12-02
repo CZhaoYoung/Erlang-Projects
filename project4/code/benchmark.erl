@@ -1,6 +1,7 @@
 %%
 %% Zhaoyang Chen
 %% 
+%% Benchmark test
 
 -module(benchmark).
 
@@ -33,26 +34,26 @@ load_generation_setup() ->
     single_actor:initialize(),
     NumbersOfUsers = 5000,
     UserType = {NumbersOfUsers, 10, 100},
-    Users = workload:generate_users(UserType,
+    Users = workload_simulator:generate_users(UserType,
         fun single_actor:register_user/0),
-    workload:generate_subscriptions(Users, UserType,
+    workload_simulator:generate_subscriptions(Users, UserType,
         fun single_actor:subscribe/3),
     {Users, NumbersOfUsers}.
 
 test_tweet() ->
     {Users, _} = load_generation_setup(),
     run_benchmark("tweet",
-        fun () -> workload:action_tweet(Users) end,
-        50).
+        fun () -> workload_simulator:action_tweet(Users) end,
+        5).
 
 test_get_tweets() ->
     {Users, NumbersOfUsers} = load_generation_setup(),
     run_benchmark("get_tweets",
-        fun () -> workload:action_get_tweets(Users, NumbersOfUsers) end,
-        50).
+        fun () -> workload_simulator:action_get_tweets(Users, NumbersOfUsers) end,
+        5).
 
 test_get_timeline() ->
     {Users, _} = load_generation_setup(),
     run_benchmark("get_timeline",
-        fun () -> workload:action_get_timeline(Users) end,
-        50).
+        fun () -> workload_simulator:action_get_timeline(Users) end,
+        5).
