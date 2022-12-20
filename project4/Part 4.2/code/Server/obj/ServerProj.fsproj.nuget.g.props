@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ChaoYoung\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\ChaoYoung\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgWebSocketSharp Condition=" '$(PkgWebSocketSharp)' == '' ">C:\Users\ChaoYoung\.nuget\packages\websocketsharp\1.0.3-rc11</PkgWebSocketSharp>
+    <PkgSystem_Text_Json Condition=" '$(PkgSystem_Text_Json)' == '' ">C:\Users\ChaoYoung\.nuget\packages\system.text.json\5.0.0</PkgSystem_Text_Json>
+    <PkgMicrosoft_NETFramework_ReferenceAssemblies Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies)' == '' ">C:\Users\ChaoYoung\.nuget\packages\microsoft.netframework.referenceassemblies\1.0.2</PkgMicrosoft_NETFramework_ReferenceAssemblies>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\ChaoYoung\.nuget\packages\fsharp.core\7.0.0</PkgFSharp_Core>
+    <PkgAkka Condition=" '$(PkgAkka)' == '' ">C:\Users\ChaoYoung\.nuget\packages\akka\1.4.12</PkgAkka>
+    <PkgAkka_FSharp Condition=" '$(PkgAkka_FSharp)' == '' ">C:\Users\ChaoYoung\.nuget\packages\akka.fsharp\1.4.12</PkgAkka_FSharp>
+  </PropertyGroup>
+</Project>

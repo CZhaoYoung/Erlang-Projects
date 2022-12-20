@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Desktop\\2022Fall\\DOSP\\Project\\4-2\\Project4.2\\Client\\ClientProj.fsproj": {}
+  },
+  "projects": {
+    "D:\\Desktop\\2022Fall\\DOSP\\Project\\4-2\\Project4.2\\Client\\ClientProj.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\2022Fall\\DOSP\\Project\\4-2\\Project4.2\\Client\\ClientProj.fsproj",
+        "projectName": "ClientProj",
+        "projectPath": "D:\\Desktop\\2022Fall\\DOSP\\Project\\4-2\\Project4.2\\Client\\ClientProj.fsproj",
+        "packagesPath": "C:\\Users\\ChaoYoung\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\2022Fall\\DOSP\\Project\\4-2\\Project4.2\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChaoYoung\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.8"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.100\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net4.8",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net4.8",
+          "dependencies": {
+            "Akka": {
+              "target": "Package",
+              "version": "[1.4.12, )",
+              "generatePathProperty": true
+            },
+            "Akka.FSharp": {
+              "target": "Package",
+              "version": "[1.4.12, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "WebSocketSharp": {
+              "target": "Package",
+              "version": "[1.0.3-rc11, )",
+              "generatePathProperty": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
